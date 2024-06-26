@@ -51,6 +51,11 @@ public class PrincipalPage extends javax.swing.JFrame {
         btnEncryting.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
         btnEncryting.setForeground(new java.awt.Color(255, 255, 255));
         btnEncryting.setText("Encrypting");
+        btnEncryting.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEncrytingActionPerformed(evt);
+            }
+        });
 
         btnExit.setBackground(new java.awt.Color(51, 51, 51));
         btnExit.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
@@ -126,6 +131,11 @@ public class PrincipalPage extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();
     }//GEN-LAST:event_btnExitActionPerformed
+
+    private void btnEncrytingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEncrytingActionPerformed
+        // TODO add your handling code here:
+        EncryptorPage.createAndShowGUI();
+    }//GEN-LAST:event_btnEncrytingActionPerformed
 
     /**
      * @param args the command line arguments
